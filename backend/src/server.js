@@ -6,6 +6,7 @@ import adminRoutes from './routes/details/admin.route.js';
 import facultyRoutes from './routes/details/faculty.route.js';
 import studentRoutes from './routes/details/student.route.js';
 import branchRoutes from './routes/branch.route.js';
+import examRoutes from './routes/exam.route.js';
 
 const PORT = process.env.PORT|| 5000;
 const app = express();
@@ -24,6 +25,7 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/faculty', facultyRoutes);
 app.use('/api/student', studentRoutes);
 app.use('/api/branch', branchRoutes);
+app.use('/api/exam', examRoutes);
 
 /*server is getting started*/
 app.listen(PORT , () => {

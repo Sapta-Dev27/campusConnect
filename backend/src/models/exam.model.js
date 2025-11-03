@@ -21,7 +21,7 @@ const examSchema = new mongoose.Schema({
     enum : ["mid" , "end"]
   },
   examDate:{
-    type:Date,
+    type:String,
     required:true,
     unique:true
   },
