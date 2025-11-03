@@ -10,6 +10,13 @@ const branchSchema = new mongoose.Schema({
     type:String,
     required:true,
     unique:true
+  },
+  branchHODName:{
+    type:String,
+  },
+  branchHODEmail:{
+    type:String,
+    unique:true
   }
 })
 
